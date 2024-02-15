@@ -2,7 +2,7 @@
 
     SELECT YEAR(`enrolment_date`) AS iscritti_per_anno, COUNT(*) AS numero_iscritti
     FROM `students`
-    GROUP BY YEAR(`enrolment_date`)
+    GROUP BY YEAR(`enrolment_date`);
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
@@ -14,7 +14,7 @@
 
     SELECT `exam_id`, AVG(`vote`) AS media_voto
     FROM `exam_student`
-    GROUP BY `exam_id` 
+    GROUP BY `exam_id` ;
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
